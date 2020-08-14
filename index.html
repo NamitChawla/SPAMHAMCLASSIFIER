@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../static/css/style.css"/>
+</head>
+<title> YOU SPAMMIN OR HAMMIN?</title>
+<body>
+<div class="content" style="background-image: url('../static/img/back_4.jpg');">
+    <h1 style="..."> ARE YOU HERE TO HAM OR SPAM? </h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <div class="msg">
+                <h2 class="msg"> Ham/Spam </h2>
+                <label class="first_label"> Message </label>
+                <input class="input_message" type="text" name="msg", placeholder="Enter message here">
+            </div>
+
+            <button class = "btn" type="submit" value="Identify">Find out</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> HAM-SPAM finder</title>
+<link rel="stylesheet" href="../static/css/style.css"/>
+</head>
+<body>
+    <div class="main", style="background-image: linear-gradient(rgba(0,0,0,0.4),
+                rgba(0,0,0,0.4)),url('../static/img/back_2.jpg');
+                height:100%;
+                width:100%;
+                background-position: center;
+                background-size: cover;
+                position: absolute;">
+        <div class="social_icons">
+                <a href="https://www.linkedin.com/in/namit-chawla-7683b212b/">
+                    <img src="../static/img/linkdin.png">
+                </a>
+        </div>
+        <div class="form_box">
+            <div class="button_box">
+                <p align="center"><b> Ham or Spam? </b></p>
+            </div>
+            <form id="prediction_form" class="input_data" action="/predict" method="post">
+                <input type="text" class="message" name="msg" id="msg" placeholder="Enter a message" required>
+                <input type="submit" class="prediction_button" value="Find out"></input>
+            </form>
+
+        </div>
+        <div class="footer">
+            <h3>Developed by Namit Chawla and Vijay
+            <a href="https://www.linkedin.com/in/vijay-bavigadda-2866138">
+                    <img src="../static/img/linkdin.png">
+            </a>
+            </h3>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
