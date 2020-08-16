@@ -61,7 +61,7 @@
 }
 .left1{
     position: absolute;
-	background: url("./static/img/spam.png") no-repeat center;
+
 	background-size: cover;
 	width:100px;
     height:300px;
@@ -69,6 +69,7 @@
     top: 10%;
 	margin: 25px 5px;
 }
+
 .social-menu ul {
     position: absolute;
     top: 94%;
