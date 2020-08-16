@@ -56,10 +56,11 @@ def index():
             print("Prediction is: ", prediction[0])
             op = ""
             if prediction[0] == 0:
-                op = "You just entered a HAM text"
+                op = "Thank god, HAM it is."
+                return render_template("results.html")
             else:
-                op = "You just entered a SPAM text"
-            return render_template("results.html", result = op)
+                op = "Oh no, you just SPAMMED."
+                return render_template("results_2.html")
         except Exception as e:
             print("EXCEPTION OCCURED, PLEASE TRY IN A WHILE ",e)
 
@@ -68,6 +69,6 @@ def index():
 
 #port = int(os.getenv("PORT"))
 if __name__=="__main__":
-    app.run(host="0.0.0.0", port=8000) #For testing in local system
+    #app.run(host="0.0.0.0", port=8000) #For testing in local system
     #app.run(host="0.0.0.0", port=port)
-    #app.run(host="127.0.0.3", debug=True)
+    app.run(host="127.0.0.3", debug=True)

@@ -59,8 +59,62 @@
     border: 0;
     transition: .5s;
 }
+.left1{
+    position: absolute;
+	background: url("./static/img/spam.png") no-repeat center;
+	background-size: cover;
+	width:100px;
+    height:300px;
+    left:33%;
+    top: 10%;
+	margin: 25px 5px;
+}
+.social-menu ul {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fab {
+    color: #000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fab:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d60432;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #404040;
+}
 .footer{
+    position: absolute;
     color:#FFF;
     padding:5px;
-    text-align:center;
+    text-align:inherit;
+    left: 38%;
+    top:84%;
 }
+
+
