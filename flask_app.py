@@ -67,8 +67,8 @@ def index():
     else:
         return render_template("index.html")
 
-#port = int(os.getenv("PORT"))
+port = int(os.getenv("PORT"))
 if __name__=="__main__":
     #app.run(host="0.0.0.0", port=8000) #For testing in local system
-    #app.run(host="0.0.0.0", port=port)
-    app.run(host="127.0.0.3", debug=True)
+    app.run(host="0.0.0.0", port=port)
+    #app.run(host="127.0.0.3", debug=True)
