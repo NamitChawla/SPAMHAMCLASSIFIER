@@ -1,4 +1,8 @@
 # SPAMHAMCLASSIFIER
+![Python](https://img.shields.io/badge/Python-3.6-%2333ccff)
+![Framework](https://img.shields.io/badge/Framework-Flask-red)
+![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS-%23ff3300)
+
 The following discription enlightens the steps of entire life cycle of the project.
 ---
 ## Contributors
