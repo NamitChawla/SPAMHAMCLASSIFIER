@@ -38,29 +38,31 @@ def index():
             cv = CountVectorizer()
             corpus_list = []
 
-            #To create same instance of CountVectorizer as of training model
-            with open("corpus_list.txt", "r") as f:
-                filecontents = f.readlines()
-                for line in filecontents:
-                    # To remove line break
-                    current_point = line[:-1]
-                    corpus_list.append(current_point)
-            dummy_var = cv.fit_transform(corpus_list).toarray()
+                        try:
+                with open("corpus_list.txt", "r") as f:
+                    filecontents = f.readlines()
+                    for line in filecontents:
+                        # To remove line break
+                        current_point = line[:-1]
+                        corpus_list.append(current_point)
+                dummy_var = cv.fit_transform(corpus_list).toarray()
 
-            x = cv.transform(corpus).toarray()
+                x = cv.transform(corpus).toarray()
 
 
-            loaded_model = pickle.load(open(filename, 'rb'))
-            #prediction begins now
-            prediction = loaded_model.predict(x)
-            print("Prediction is: ", prediction[0])
-            op = ""
-            if prediction[0] == 0:
-                op = "Thank god, HAM it is."
-                return render_template("results.html")
-            else:
-                op = "Oh no, you just SPAMMED."
-                return render_template("results_2.html")
+                loaded_model = pickle.load(open(filename, 'rb'))
+                #prediction begins now
+                prediction = loaded_model.predict(x)
+                print("Prediction is: ", prediction[0])
+                op = ""
+                if prediction[0] == 0:
+                    op = "Thank god, HAM it is."
+                    return render_template("results.html")
+                else:
+                    op = "Oh no, you just SPAMMED."
+                    return render_template("results_2.html")
+            except Exception as ex:
+                print("Files not found error: ", ex)
         except Exception as e:
             print("EXCEPTION OCCURED, PLEASE TRY IN A WHILE ",e)
 
