@@ -4,7 +4,18 @@
 ![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS-%23ff3300)
 ![Deployment](https://img.shields.io/badge/Deployment-Heroku-orange)
 
-The following discription enlightens the steps of entire life cycle of the project.
+## Table of contents
+- Demo
+- Overview
+- Technical Aspect
+- Installation
+- Run
+- Deployment on Heroku
+- Directory tree
+- To Do
+- Technologies used
+- Contributors
+- Credits
 ---
 ## Contributors
 - Namit Chawla [LinkedIn](https://www.linkedin.com/in/namit-chawla-7683b212b/)
